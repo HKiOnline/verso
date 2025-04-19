@@ -10,3 +10,12 @@ Get the latest version in the CHANGELOG.
 ```bash
 verso latest
 ```
+
+### Usage as library package
+
+```go
+import "github.com/hkionline/verso/pkg/verso"
+
+changelog, err := verso.Parse("path/to/CHANGELOG.md")
+
+```
