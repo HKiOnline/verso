@@ -6,8 +6,22 @@ Simple [CHANGELOG]("https://keepachangelog.com") [semver]("https://semver.org/")
 
 ## Usage
 
+Changelogs can be parsed either by supplying a file path or bytes from a file, assumed to contain a changelog formatted data.
+
+***Parse a file from file path:***
 ```go
 import "github.com/hkionline/verso"
 
-changelog, err := verso.Parse("path/to/CHANGELOG.md")
+changelog, err := verso.ParsePath("path/to/CHANGELOG.md")
+```
+
+***Parse a file from bytes:***
+```go
+import "github.com/hkionline/verso"
+
+var bytes []byte
+
+// code to read a file, e.g. stdin
+
+changelog, err := verso.ParseBytes(bytes)
 ```
