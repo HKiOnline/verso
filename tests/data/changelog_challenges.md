@@ -31,6 +31,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Removed a thing
 
+## [1.1.1-beta.1+20250419.b4fa3175-3e2f-42e2-a1d3-a47a57faecfb] - 2025-04-19
+
+### Added
+
+- Added a thing
+
 ## [1.1.0+20250418.88a27044-8583-4581-aff6-285a1ae458c3] - 2025-04-18
 
 ### Added
