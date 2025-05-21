@@ -8,12 +8,12 @@ import (
 
 // Semver struct contains semantic version information
 type Semver struct {
-	Major      int
-	Minor      int
-	Patch      int
-	PreRelease string
-	Build      string
-	Date       time.Time
+	Major      int       `json:"major"`
+	Minor      int       `json:"minor"`
+	Patch      int       `json:"patch"`
+	PreRelease string    `json:"preRelease"`
+	Build      string    `json:"build"`
+	Date       time.Time `json:"date"`
 }
 
 // String implements [fmt.Stringer] interface. It returns Semver fields' values as a string.
