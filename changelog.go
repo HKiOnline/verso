@@ -1,6 +1,6 @@
 package verso
 
 type Changelog struct {
-	Path     string
-	Versions []Semver
+	Path     string   `json:"path"`
+	Versions []Semver `json:"versions"`
 }
