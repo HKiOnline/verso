@@ -4,7 +4,7 @@ Thank you for considering contributing to the project! 🎉❤️
 
 This project is a light weight hobby project with a low barrier for contributions. The repository's owner is committed to approach all contributions in good faith and respect. Ultimately, the repository owner maintains final say over what is included in the project.
 
-Before you go too deep into the process, have a look at the [README-file](https://github.com/hkionline/verso.cli) to get a general idea of the project. And if you are conributing the first time, please read this document.
+Before you go too deep into the process, have a look at the [README-file](https://github.com/hkionline/verso) to get a general idea of the project. And if you are conributing the first time, please read this document.
 
 ---
 
