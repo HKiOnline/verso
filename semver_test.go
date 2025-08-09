@@ -26,7 +26,7 @@ func TestSemverString(t *testing.T) {
 				Build:      "002",
 				Date:       time.Date(2023, 10, 1, 0, 0, 0, 0, time.UTC),
 			},
-			expected: "1.1.2-beta+002 2023-10-01",
+			expected: "[1.1.2-beta+002] 2023-10-01",
 		},
 		{
 			name: "default Major.Minor.Patch",
@@ -46,7 +46,7 @@ func TestSemverString(t *testing.T) {
 				Build: "002",
 				Date:  time.Date(2023, 10, 1, 0, 0, 0, 0, time.UTC),
 			},
-			expected: "1.1.2+002 2023-10-01",
+			expected: "[1.1.2+002] 2023-10-01",
 		},
 		{
 			name: "empty Build field",
@@ -57,7 +57,7 @@ func TestSemverString(t *testing.T) {
 				PreRelease: "beta",
 				Date:       time.Date(2023, 10, 1, 0, 0, 0, 0, time.UTC),
 			},
-			expected: "1.1.2-beta 2023-10-01",
+			expected: "[1.1.2-beta] 2023-10-01",
 		},
 		{
 			name: "default Date field",
@@ -69,7 +69,7 @@ func TestSemverString(t *testing.T) {
 				Build:      "002",
 				Date:       time.Time{},
 			},
-			expected: "1.1.2-beta+002",
+			expected: "[1.1.2-beta+002]",
 		},
 	}
 
