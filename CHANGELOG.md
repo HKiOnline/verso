@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## [1.0.1] - 2025-08-09
+
+### Added
+
+- New patch to get rid of the haunting old v1.0.0 in pkg.go.dev repositories, please use 1.+ versions instead of just the 1.0.0 version
+
 ## [1.0.0] - 2025-08-09
 
 ### Changed
