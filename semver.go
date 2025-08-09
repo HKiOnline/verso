@@ -28,6 +28,7 @@ func (s Semver) String() string {
 	}
 
 	sb := strings.Builder{}
+	sb.WriteString("[")
 	sb.WriteString(fmt.Sprint(s.Major))
 	sb.WriteString(".")
 	sb.WriteString(fmt.Sprint(s.Minor))
@@ -43,6 +44,8 @@ func (s Semver) String() string {
 		sb.WriteString("+")
 		sb.WriteString(fmt.Sprint(s.Build))
 	}
+
+	sb.WriteString("]")
 
 	if !s.Date.IsZero() {
 		sb.WriteString(" ")
